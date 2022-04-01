@@ -4,14 +4,18 @@ using std::cout;
 using std::endl;
 using namespace ::mysqlx;
 
-const char *(incrementCounter)(std::string DBURL, std::string adapter_code, std::string fixture_type)
+std::string incrementCounter(std::string DBURL, 
+                             std::string adapter_code, 
+                             std::string fixture_type)
 {
+
+    std::string returnString{"OK"};
     try
     {
         Session sess(DBURL);
 
         Schema sch = sess.getSchema("counterdb");
-        Table table = sch.getTable("projects");
+        Table table = sch.getTable("Projects");
 
         sess.sql("use counterdb;").execute();
         sess.sql("call incrementCounter(" + adapter_code + "," + "\"" + fixture_type + "\"" + ")").execute();
@@ -19,14 +23,18 @@ const char *(incrementCounter)(std::string DBURL, std::string adapter_code, std:
     }
     catch (const mysqlx::Error &err)
     {
-        return err.what();
+
+#if _DEBUG
+        cout << "ERROR EXCEPTION: " << err.what() << endl;
+#endif
+        returnString = err.what();
     }
     catch (std::exception &ex)
     {
 #if _DEBUG
         cout << "STD EXCEPTION: " << ex.what() << endl;
 #endif
-        return ex.what();
+        returnString = ex.what();
     }
     catch (const char *ex)
     {
@@ -34,9 +42,8 @@ const char *(incrementCounter)(std::string DBURL, std::string adapter_code, std:
         cout << "EXCEPTION: " << ex << endl;
 #endif
 
-        return ex;
+        returnString = ex;
     }
 
-    return "OK";
-    
+    return returnString;
 }

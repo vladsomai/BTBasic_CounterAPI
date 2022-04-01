@@ -21,9 +21,9 @@
 
 extern void copyReturnString(const char* input, char* retString);
 extern std::vector<std::string> parse_C_style_str(char* input);
-const char* (incrementCounter)(std::string DBURL,
-	                           std::string adapter_code, 
-	                           std::string fixture_type);
+std::string incrementCounter(std::string DBURL,
+	                         std::string adapter_code, 
+	                         std::string fixture_type);
 
 DllExport EXT_DLL_Result BTBasic_DLL_Call(char* functionName, char* parameters,
 	char* returnString, int* returnValue)
@@ -50,16 +50,16 @@ DllExport EXT_DLL_Result BTBasic_DLL_Call(char* functionName, char* parameters,
 			return EXT_DLL_Result::EXT_DLL_Result_Error;
 		}
 
-		const char* result = incrementCounter(DBURL, adapter_code, fixture_type);
+		std::string result = incrementCounter(DBURL, adapter_code, fixture_type);
 
-		if (strcmp(result, "OK") == 0)
+		if (result =="OK")
 		{
 			copyReturnString("SUCCESS: Adapter code incremented!", returnString);
 			return EXT_DLL_Result::EXT_DLL_Result_OK;
 		}
 		else
 		{
-			copyReturnString(result, returnString);
+			copyReturnString(result.c_str(), returnString);
 			return EXT_DLL_Result::EXT_DLL_Result_Error;
 		}
 	}
