@@ -21,9 +21,7 @@
 
 extern void copyReturnString(const char* input, char* retString);
 extern std::vector<std::string> parse_C_style_str(char* input);
-std::string incrementCounter(std::string DBURL,
-	                         std::string adapter_code, 
-	                         std::string fixture_type);
+
 
 DllExport EXT_DLL_Result BTBasic_DLL_Call(char* functionName, char* parameters,
 	char* returnString, int* returnValue)
@@ -44,14 +42,14 @@ DllExport EXT_DLL_Result BTBasic_DLL_Call(char* functionName, char* parameters,
 			adapter_code = params.at(1);
 			fixture_type = params.at(2);
 		}
-		catch (const std::out_of_range& ex)
+		catch (const std::out_of_range&)
 		{
 			copyReturnString("ERROR: Invalid parameters, please provide DB URL, adapter code and fixture type!", returnString);
 			return EXT_DLL_Result::EXT_DLL_Result_Error;
 		}
 
-		std::string result = incrementCounter(DBURL, adapter_code, fixture_type);
-
+		//std::string result = incrementCounter(DBURL, adapter_code, fixture_type);
+		std::string result = "OK";
 		if (result =="OK")
 		{
 			copyReturnString("SUCCESS: Adapter code incremented!", returnString);

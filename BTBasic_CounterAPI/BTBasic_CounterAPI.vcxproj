@@ -93,7 +93,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>mysqlcppconn8-static.lib;libssl.lib;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>mysqlcppconn8-static.lib;mysqlcppconn-static.lib;libssl.lib;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>c:\Program Files (x86)\MySQL\MySQL Connector C++ 8.0\debug_mysql_connector\lib\vs14\;c:\Program Files (x86)\MySQL\MySQL Connector C++ 8.0\debug_mysql_connector\lib\vs14\debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -128,7 +128,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>mysqlcppconn8-static.lib;libssl.lib;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>c:\Program Files (x86)\MySQL\MySQL Connector C++ 8.0\debug_mysql_connector\lib\vs14\;c:\Program Files (x86)\MySQL\MySQL Connector C++ 8.0\debug_mysql_connector\lib\vs14\debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>c:\Program Files (x86)\MySQL\MySQL Connector C++ 8.0\debug_mysql_connector\lib\vs14\;c:\Program Files (x86)\MySQL\MySQL Connector C++ 8.0\debug_mysql_connector\lib\vs14\debug\;c:\Program Files (x86)\MySQL\MySQL Connector C++ 8.0\include\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -154,11 +154,15 @@
     <ClCompile Include="BTBasic_CounterAPI.cpp" />
     <ClCompile Include="BTBasic_Wrapper_DLL.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="TCPDatabaseConnection.cpp" />
     <ClCompile Include="utility.cpp" />
+    <ClCompile Include="XDevDatabaseConnection.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BTBasic_Wrapper_DLL.h" />
     <ClInclude Include="lib.h" />
+    <ClInclude Include="TCPDatabaseConnection.h" />
+    <ClInclude Include="XDevDatabaseConnection.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
