@@ -105,15 +105,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>STATIC_CONCPP</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\MySQL\MySQL Connector C++ 8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\MySQL_Connector\Release\include\;$(ProjectDir)\MySQL_Connector\Release\lib\vs14\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>mysqlcppconn8-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\MySQL\MySQL Connector C++ 8.0\lib\vs14;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlcppconn8-static.lib;mysqlcppconn-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)\MySQL_Connector\Release\lib\vs14\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -276,6 +276,7 @@
     <None Include="MySQL_Connector\Debug\lib\plugin\authentication_fido_client.dll" />
     <None Include="MySQL_Connector\Debug\lib\plugin\authentication_kerberos_client.dll" />
     <None Include="MySQL_Connector\Debug\lib\plugin\authentication_oci_client.dll" />
+    <None Include="MySQL_Connector\Release\bin\fido2.dll" />
     <None Include="MySQL_Connector\Release\INFO_BIN" />
     <None Include="MySQL_Connector\Release\INFO_SRC" />
     <None Include="MySQL_Connector\Release\lib\libcrypto-1_1.dll" />

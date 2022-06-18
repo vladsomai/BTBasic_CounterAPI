@@ -375,6 +375,7 @@
     <None Include="MySQL_Connector\Debug\lib\plugin\authentication_fido_client.dll" />
     <None Include="MySQL_Connector\Debug\lib\plugin\authentication_oci_client.dll" />
     <None Include="MySQL_Connector\Debug\lib\plugin\authentication_kerberos_client.dll" />
+    <None Include="MySQL_Connector\Release\bin\fido2.dll" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="MySQL_Connector\Release\LICENSE.txt" />
