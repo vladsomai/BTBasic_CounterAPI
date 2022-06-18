@@ -1,4 +1,4 @@
-#include "XDevDatabaseConnection.h"
+#include "../Headers/XDevDatabaseConnection.h"
 
 using std::cout;
 using std::endl;

@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "../Headers//lib.h"
 
 void copyReturnString(const char* input, char* returnString)
 {

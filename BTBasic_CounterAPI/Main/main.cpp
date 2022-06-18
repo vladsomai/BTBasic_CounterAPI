@@ -1,6 +1,6 @@
-#include "lib.h"
-#include "TCPDatabaseConnection.h"
-#include "XDevDatabaseConnection.h"
+#include "../Headers/lib.h"
+#include "../Headers/TCPDatabaseConnection.h"
+#include "../Headers/XDevDatabaseConnection.h"
 
 int main()
 {

@@ -21,37 +21,373 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Main\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BTBasic_Wrapper_DLL.cpp">
+    <ClCompile Include="Main\BTBasic_Wrapper_DLL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BTBasic_CounterAPI.cpp">
+    <ClCompile Include="Main\BTBasic_CounterAPI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TCPDatabaseConnection.cpp">
+    <ClCompile Include="DatabaseConnectionTypes\TCPDatabaseConnection.cpp">
       <Filter>Source Files\DatabaseConnectionTypes</Filter>
     </ClCompile>
-    <ClCompile Include="XDevDatabaseConnection.cpp">
+    <ClCompile Include="DatabaseConnectionTypes\XDevDatabaseConnection.cpp">
       <Filter>Source Files\DatabaseConnectionTypes</Filter>
     </ClCompile>
-    <ClCompile Include="utility.cpp">
+    <ClCompile Include="Utility\utility.cpp">
       <Filter>Source Files\Utility</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BTBasic_Wrapper_DLL.h">
+    <ClInclude Include="Headers\BTBasic_Wrapper_DLL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="lib.h">
+    <ClInclude Include="Headers\lib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TCPDatabaseConnection.h">
+    <ClInclude Include="Headers\TCPDatabaseConnection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="XDevDatabaseConnection.h">
+    <ClInclude Include="Headers\XDevDatabaseConnection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\build_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\datatype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\parameter_metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\prepared_statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\resultset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\resultset_metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\sqlstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\variant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\version_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\cppconn\warning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\mysql_connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\mysql_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\jdbc\mysql_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysql\jdbc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\common\api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\common\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\common\op_if.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\common\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\common\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\common\value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\detail\crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\detail\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\detail\result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\detail\row.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\detail\session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\detail\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\collations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\collection_crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\document.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\executable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\mysql_charsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\mysql_collations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\row.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\devapi\table_crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\common_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\xapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Debug\include\mysqlx\xdevapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\build_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\datatype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\parameter_metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\prepared_statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\resultset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\resultset_metadata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\sqlstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\variant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\version_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\cppconn\warning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\mysql_connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\mysql_driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\jdbc\mysql_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysql\jdbc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\common\api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\common\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\common\op_if.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\common\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\common\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\common\value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\detail\crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\detail\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\detail\result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\detail\row.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\detail\session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\detail\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\collations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\collection_crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\document.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\executable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\mysql_charsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\mysql_collations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\row.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\devapi\table_crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\common_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\xapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQL_Connector\Release\include\mysqlx\xdevapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MySQL_Connector\Release\lib\libcrypto-1_1.dll" />
+    <None Include="MySQL_Connector\Release\lib\libssl-1_1.dll" />
+    <None Include="MySQL_Connector\Release\lib\mysqlcppconn8-2-vs14.dll" />
+    <None Include="MySQL_Connector\Release\lib\mysqlcppconn-9-vs14.dll" />
+    <None Include="MySQL_Connector\Release\INFO_BIN" />
+    <None Include="MySQL_Connector\Release\INFO_SRC" />
+    <None Include="MySQL_Connector\Release\lib\plugin\authentication_fido_client.dll" />
+    <None Include="MySQL_Connector\Release\lib\plugin\authentication_kerberos_client.dll" />
+    <None Include="MySQL_Connector\Release\lib\plugin\authentication_oci_client.dll" />
+    <None Include="MySQL_Connector\Debug\INFO_BIN" />
+    <None Include="MySQL_Connector\Debug\INFO_SRC" />
+    <None Include="MySQL_Connector\Debug\lib\libcrypto-1_1.dll" />
+    <None Include="MySQL_Connector\Debug\lib\libssl-1_1.dll" />
+    <None Include="MySQL_Connector\Debug\lib\debug\mysqlcppconn8-2-vs14.dll" />
+    <None Include="MySQL_Connector\Debug\lib\debug\mysqlcppconn8-2-vs14.pdb" />
+    <None Include="MySQL_Connector\Debug\lib\debug\mysqlcppconn-9-vs14.dll" />
+    <None Include="MySQL_Connector\Debug\lib\debug\mysqlcppconn-9-vs14.pdb" />
+    <None Include="MySQL_Connector\Debug\lib\plugin\authentication_fido_client.dll" />
+    <None Include="MySQL_Connector\Debug\lib\plugin\authentication_oci_client.dll" />
+    <None Include="MySQL_Connector\Debug\lib\plugin\authentication_kerberos_client.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="MySQL_Connector\Release\LICENSE.txt" />
+    <Text Include="MySQL_Connector\Release\README.txt" />
+    <Text Include="MySQL_Connector\Debug\LICENSE.txt" />
+    <Text Include="MySQL_Connector\Debug\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="MySQL_Connector\Release\lib\vs14\libcrypto.lib" />
+    <Library Include="MySQL_Connector\Release\lib\vs14\libssl.lib" />
+    <Library Include="MySQL_Connector\Release\lib\vs14\mysqlcppconn.lib" />
+    <Library Include="MySQL_Connector\Release\lib\vs14\mysqlcppconn8-static.lib" />
+    <Library Include="MySQL_Connector\Release\lib\vs14\mysqlcppconn8.lib" />
+    <Library Include="MySQL_Connector\Release\lib\vs14\mysqlcppconn-static.lib" />
   </ItemGroup>
 </Project>

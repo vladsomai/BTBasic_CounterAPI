@@ -16,8 +16,8 @@
 * DO NOT CHANGE THE "BTBasic_DLL_Call" FUNCTION SIGNATURE OR REDEFINE / MODIFY THE ENUM "EXT_DLL_Result" FROM THE HEADER.
 * 
 */
-#include "lib.h"
-#include "BTBasic_Wrapper_DLL.h"
+#include "../Headers/lib.h"
+#include "../Headers/BTBasic_Wrapper_DLL.h"
 
 extern void copyReturnString(const char* input, char* retString);
 extern std::vector<std::string> parse_C_style_str(char* input);
