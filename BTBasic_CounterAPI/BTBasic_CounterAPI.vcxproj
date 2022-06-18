@@ -72,6 +72,10 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\MySQL_Connector\Release\lib;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ProjectDir)\MySQL_Connector\Release\lib;$(ExternalIncludePath)</ExternalIncludePath>
+    <ReferencePath>$(ProjectDir)\MySQL_Connector\Release\lib;$(ReferencePath)</ReferencePath>
+    <SourcePath>$(ProjectDir)\MySQL_Connector\Release\lib;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -88,13 +92,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>STATIC_CONCPP</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)\MySQL_Connector\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\MySQL_Connector\Debug\include;$(ProjectDir)\MySQL_Connector\Release\lib\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>mysqlcppconn8-static.lib;mysqlcppconn-static.lib;libssl.lib;libcrypto.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)\MySQL_Connector\Debug\lib\vs14\debug;$(ProjectDir)\MySQL_Connector\Debug\lib\vs14\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)\MySQL_Connector\Debug\lib\vs14\debug;$(ProjectDir)\MySQL_Connector\Debug\lib\vs14\;$(ProjectDir)\MySQL_Connector\Release\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -280,7 +284,9 @@
     <None Include="MySQL_Connector\Release\INFO_BIN" />
     <None Include="MySQL_Connector\Release\INFO_SRC" />
     <None Include="MySQL_Connector\Release\lib\libcrypto-1_1.dll" />
-    <None Include="MySQL_Connector\Release\lib\libssl-1_1.dll" />
+    <None Include="MySQL_Connector\Release\lib\libssl-1_1.dll">
+      <FileType>Document</FileType>
+    </None>
     <None Include="MySQL_Connector\Release\lib\mysqlcppconn-9-vs14.dll" />
     <None Include="MySQL_Connector\Release\lib\mysqlcppconn8-2-vs14.dll" />
     <None Include="MySQL_Connector\Release\lib\plugin\authentication_fido_client.dll" />

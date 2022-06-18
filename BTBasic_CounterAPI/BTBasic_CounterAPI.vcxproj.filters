@@ -356,7 +356,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MySQL_Connector\Release\lib\libcrypto-1_1.dll" />
-    <None Include="MySQL_Connector\Release\lib\libssl-1_1.dll" />
     <None Include="MySQL_Connector\Release\lib\mysqlcppconn8-2-vs14.dll" />
     <None Include="MySQL_Connector\Release\lib\mysqlcppconn-9-vs14.dll" />
     <None Include="MySQL_Connector\Release\INFO_BIN" />
@@ -376,6 +375,7 @@
     <None Include="MySQL_Connector\Debug\lib\plugin\authentication_oci_client.dll" />
     <None Include="MySQL_Connector\Debug\lib\plugin\authentication_kerberos_client.dll" />
     <None Include="MySQL_Connector\Release\bin\fido2.dll" />
+    <None Include="MySQL_Connector\Release\lib\libssl-1_1.dll" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="MySQL_Connector\Release\LICENSE.txt" />
