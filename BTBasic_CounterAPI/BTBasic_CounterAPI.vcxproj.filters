@@ -27,7 +27,7 @@
     <ClCompile Include="Main\BTBasic_Wrapper_DLL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Main\BTBasic_CounterAPI.cpp">
+    <ClCompile Include="DatabaseHandler\DatabaseHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DatabaseConnectionTypes\TCPDatabaseConnection.cpp">
@@ -38,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="Utility\utility.cpp">
       <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers\IDatabaseConnection.h">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -351,6 +354,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MySQL_Connector\Release\include\mysqlx\xdevapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\DatabaseHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

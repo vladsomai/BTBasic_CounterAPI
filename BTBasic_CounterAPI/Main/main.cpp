@@ -1,9 +1,87 @@
 #include "../Headers/lib.h"
 #include "../Headers/TCPDatabaseConnection.h"
 #include "../Headers/XDevDatabaseConnection.h"
+#include "../Headers/DatabaseHandler.h"
+#include "../Headers/BTBasic_Wrapper_DLL.h"
+
+using namespace TCPDatabaseConnectionNS;
+using namespace XDevDatabaseConnectionNS;
+using namespace DatabaseHandlerNS;
+
+extern EXT_DLL_Result BTBasic_DLL_Call(char* functionName, char* parameters,
+	char* returnString, int* returnValue);
 
 int main()
 {
+	{
+		char function[]{ "Connect" };
+		char parameters[]{ "TCP,35.198.72.42,root,3ng1n33r" };
+		char buffer[2000]{};
+		int* retVal{ nullptr };
+
+		BTBasic_DLL_Call(function, parameters, buffer, retVal);
+		std::cout << buffer << std::endl;
+	}
+
+	{
+		char function[]{ "IncrementCounter" };
+		char parameters[]{ "104,FCT" };
+		char buffer[2000]{};
+		int* retVal{ nullptr };
+
+		BTBasic_DLL_Call(function, parameters, buffer, retVal);
+		std::cout << buffer << std::endl;
+	}
+
+	{
+		char function[]{ "UpdateTemperature" };
+		char parameters[]{ "104,FCT,23" };
+		char buffer[2000]{};
+		int* retVal{ nullptr };
+
+		BTBasic_DLL_Call(function, parameters, buffer, retVal);
+		std::cout << buffer << std::endl;
+	}
+
+	{
+		char function[]{ "UpdateContacts" };
+		char parameters[]{ "104,FCT,80001" };
+		char buffer[2000]{};
+		int* retVal{ nullptr };
+
+		BTBasic_DLL_Call(function, parameters, buffer, retVal);
+		std::cout << buffer << std::endl;
+	}
+
+	{
+		char function[]{ "UpdateContacts" };
+		char parameters[]{ "105,FCT,80001" };
+		char buffer[2000]{};
+		int* retVal{ nullptr };
+
+		BTBasic_DLL_Call(function, parameters, buffer, retVal);
+		std::cout << buffer << std::endl;
+	}
+
+	{
+		char function[]{ "Disconnect" };
+		char parameters[]{ "" };
+		char buffer[2000]{};
+		int* retVal{ nullptr };
+		BTBasic_DLL_Call(function, parameters, buffer, retVal);
+		std::cout << buffer << std::endl;
+	}
+
+	/*
+	//DatabaseHandler
+	{
+		std::unique_ptr<DatabaseHandler> TCPconnection = std::make_unique<DatabaseHandler>();
+		std::string result = TCPconnection->Connect(DatabaseConnectionTypes::TCP, "35.198.72.42", "root", "3ng1n33r");
+		std::cout << result << std::endl;
+	}
+
+	*/
+	/*
 	//Using TCP
 	{
 		std::unique_ptr<TCPDatabaseConnection> TCPconnection = std::make_unique<TCPDatabaseConnection>();
@@ -73,4 +151,6 @@ int main()
 			}
 		}
 	}
+	*/
+
 }
